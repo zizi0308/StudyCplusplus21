@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
+//  복사생성자호출요건 : 1. 매개변수로 객체를 선언할 때 2. return값이 객체일 때 3. 객체 값이 복사생성자일 때
 class Human
 {
 private:
@@ -8,8 +8,8 @@ private:
 	int age;
 
 public:
-	Human(const char* aname, int aage) {
-		pname = new char[strlen(aname) + 1];
+	Human(const char* aname, int aage) {		// 멤버함수자리에 출력이 없고 클래스의 이름으로 무언가있다 >> 생성자
+		pname = new char[strlen(aname) + 1];	// 동적할당
 		strcpy(pname, aname);
 		age = aage;
 	}
