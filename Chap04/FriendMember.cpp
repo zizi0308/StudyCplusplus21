@@ -12,8 +12,8 @@ public:
 
 class Time
 {
-	friend void Date::OutToday(Time& t);	// 항상 범위지정연산자를 사용해야함
-private:
+	friend void Date::OutToday(Time& t);	// Friend 클래스를 사용할 때에는 항상 범위지정 연산자를 사용해야 함 
+private:									// Line 15: Date클래스의 멤버함수인 OutToday는 Time의 모든 멤버를 읽을 수 있는 권한을 가진다
 	int hour, min, sec;
 public:
 	Time(int h, int m, int s) { hour = h; min = m; sec = s; }

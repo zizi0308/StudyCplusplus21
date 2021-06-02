@@ -1,5 +1,5 @@
 #include <stdio.h>
-// Date는 Time에 대한 친구지만, Time은 Date에 대한 친구가 아니다.(Time을 통해 Date클래스에 접근해서 사  용할 수 없다.)
+// Date는 Time에 대한 친구지만, Time은 Date에 대한 친구가 아니다.(Time을 통해 Date클래스에 접근해서 사용할 수 없다.)
 class Time
 {
 	friend class Date;

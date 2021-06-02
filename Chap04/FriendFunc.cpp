@@ -3,7 +3,7 @@
 class Date;
 class Time
 {
-	friend void OutToday(Date&, Time&);
+	friend void OutToday(Date&, Time&);		// 함수의 매개변수로 들어갈 때 레퍼런스로 넣어야 함 + 멤버변수 위에 넣어야 friend함수가 멤버변수를 읽을 수 있음
 private:
 	int hour, min, sec;
 public:
@@ -19,7 +19,7 @@ public:
 	Date(int y, int m, int d) { year = y; month = m; day = d; }
 };
 
-void OutToday(Date& d, Time& t)		// 함수의 매개변수로 들어갈 때 레퍼런스로 넣어야 함 + 정의부분에는 friend를 붙이면 안됨
+void OutToday(Date& d, Time& t)			// 함수의 매개변수로 들어갈 때 레퍼런스로 넣어야 함 + 정의부분에는 friend를 붙이면 안됨
 {
 	printf("오늘은 %d년 %d월 %d일이며 지금 시간은 %d:%d:%d입니다.",
 		d.year, d.month, d.day, t.hour, t.min, t.sec);	// friend로 선언하면 외부에서도 접근가능하기 때문에 값을 바꿀 수 있다.
