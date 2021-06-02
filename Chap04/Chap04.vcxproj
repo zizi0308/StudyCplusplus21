@@ -19,7 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="selftest.cpp" />
+    <ClCompile Include="ConstMemberberInit.cpp" />
+    <ClCompile Include="StaticConst.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
