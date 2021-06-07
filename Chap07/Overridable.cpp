@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-class Human
+class Human					// C++은 클래스의 연결거리가 메서드 밖에없음 << 일반적이 객체지향언어보다 모호성이 있다.
 {
 protected:
 	char name[12];
@@ -15,7 +15,7 @@ public:
 	void eat() {
 		puts("냠냠냠\n");
 	}
-	virtual void intro()	// 미래를 내다보고 부모클래스에 설계할 때 기존에 있었던 것에 추가하여 사용하기 위함
+	virtual void intro()	// 미래를 내다보고(나중에 사용하기 위해 미리) 부모클래스에 설계할 때 기존에 있었던 것에 추가하여 사용하기 위함
 	{
 		printf("이름 : %s, 나이 : %d", name, age);
 	}
