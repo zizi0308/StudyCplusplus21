@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// 
 class Base
 {
 private:
@@ -24,6 +24,7 @@ int main()
 {
 	Base* pB;
 
-	pB = new Derived;
-	delete pB;
-}
+	pB = new Derived;	// 부모가 자식을 가리킬 수 있으므로 객체생성하여 자식을 가리키는 것 가능(Derived객체 생성)
+	delete pB;			// new 연산자가 객체를 생성하면서 부모와 자식생성자 차례로 호출 >> 두 개의 버퍼 동적할당
+}						// But, 객체 동적할당 해제할 때는 포인터의 타입을 따르므로 pB의 파괴자만 호출(정적결합)
+						// 파괴자가 동적결합(virtual)을 하면 할당된 두 개의 버퍼를 해제할 수 있음
