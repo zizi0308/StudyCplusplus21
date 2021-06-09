@@ -19,13 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="exretry.cpp" />
+    <ClCompile Include="static_upcast.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{eb0943d6-8951-4f6c-959c-9d95fab1ffc4}</ProjectGuid>
-    <RootNamespace>Chap09</RootNamespace>
+    <ProjectGuid>{e58773e0-9db7-4a59-bccf-d387810b1fbe}</ProjectGuid>
+    <RootNamespace>Chap10</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
