@@ -285,17 +285,17 @@ int main()
 	int nSnatch;
 	int NewScore;
 
-	randomize();
+	randomize();				// 초기화
 	Initialize();				// 카드섞고 패를 나누어 게임판 생성
 	for (SouthTurn = true; !Deck.IsEmpty(); SouthTurn = !SouthTurn) {		// 전체게임루프 시작지점
 		DrawScreen();			// 각 객체를 화면에 그림
 		if (SouthTurn) {		// 패를 담요에 옮기고 먹은 카드를 패로 옮길 때 그 대상카드를 미리 조사해 이동시킴(내 패)
-			Turn = &South;
+			Turn = &South;		// 지금 차례인 플레이어
 			TurnPae = &SouthPae;	 
 			OtherPae = &NorthPae;	 
 		}
 		else {					// 패를 담요에 옮기고 먹은 카드를 패로 옮길 때 그 대상카드를 미리 조사해 이동시킴(상대 패)
-			Turn = &North;
+			Turn = &North;		
 			TurnPae = &NorthPae;
 			OtherPae = &SouthPae;
 		}
