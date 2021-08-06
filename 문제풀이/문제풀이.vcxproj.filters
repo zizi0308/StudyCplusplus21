@@ -22,10 +22,13 @@
     <Filter Include="소스 파일\for문">
       <UniqueIdentifier>{36b4722d-6eec-4ef3-985c-886e37dd35bc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\while문">
+      <UniqueIdentifier>{93a594de-1f2d-4ab2-b400-4b52944473a0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="2439.cpp">
-      <Filter>소스 파일\for문</Filter>
+    <ClCompile Include="1110.cpp">
+      <Filter>소스 파일\while문</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
